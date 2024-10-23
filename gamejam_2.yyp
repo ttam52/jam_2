@@ -35,6 +35,7 @@
   "name":"gamejam_2",
   "resources":[
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"test_2","path":"sprites/test_2/test_2.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
