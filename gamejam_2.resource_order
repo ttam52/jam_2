@@ -18,6 +18,13 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_bubble","order":1,"path":"objects/obj_bubble/obj_bubble.yy",},
+    {"name":"obj_fire","order":5,"path":"objects/obj_fire/obj_fire.yy",},
+    {"name":"obj_global_initiator","order":3,"path":"objects/obj_global_initiator/obj_global_initiator.yy",},
+    {"name":"obj_water_indicator","order":2,"path":"objects/obj_water_indicator/obj_water_indicator.yy",},
+    {"name":"obj_water_refill","order":4,"path":"objects/obj_water_refill/obj_water_refill.yy",},
     {"name":"spr_bubble","order":1,"path":"sprites/spr_bubble/spr_bubble.yy",},
+    {"name":"spr_fire","order":4,"path":"sprites/spr_fire/spr_fire.yy",},
+    {"name":"spr_health_bar","order":2,"path":"sprites/spr_health_bar/spr_health_bar.yy",},
+    {"name":"spr_water_refill","order":3,"path":"sprites/spr_water_refill/spr_water_refill.yy",},
   ],
 }
