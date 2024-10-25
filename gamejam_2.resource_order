@@ -24,6 +24,7 @@
     {"name":"obj_water_refill","order":4,"path":"objects/obj_water_refill/obj_water_refill.yy",},
     {"name":"spr_bubble","order":1,"path":"sprites/spr_bubble/spr_bubble.yy",},
     {"name":"spr_fire","order":4,"path":"sprites/spr_fire/spr_fire.yy",},
+    {"name":"spr_hall_way","order":5,"path":"sprites/spr_hall_way/spr_hall_way.yy",},
     {"name":"spr_health_bar","order":2,"path":"sprites/spr_health_bar/spr_health_bar.yy",},
     {"name":"spr_water_refill","order":3,"path":"sprites/spr_water_refill/spr_water_refill.yy",},
   ],
