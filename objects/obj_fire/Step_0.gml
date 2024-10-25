@@ -1,7 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (shooting_state = 0 && global.total_water >20)
+if fire_health == 0
 {
-	alarm_set(0,10)
-	shooting_state = 1
+	instance_destroy()
 }
