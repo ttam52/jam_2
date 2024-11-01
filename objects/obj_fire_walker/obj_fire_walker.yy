@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_fire_spirit",
+  "%Name":"obj_fire_walker",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_fire_spirit",
+  "name":"obj_fire_walker",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_fire_spirit",
-    "path":"sprites/spr_fire_spirit/spr_fire_spirit.yy",
+    "name":"spr_fire_walker",
+    "path":"sprites/spr_fire_walker/spr_fire_walker.yy",
   },
   "spriteMaskId":null,
   "visible":true,
