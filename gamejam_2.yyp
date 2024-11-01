@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"gamejam_2",
   "resources":[
@@ -38,6 +38,7 @@
     {"id":{"name":"obj_fire","path":"objects/obj_fire/obj_fire.yy",},},
     {"id":{"name":"obj_global_initiator","path":"objects/obj_global_initiator/obj_global_initiator.yy",},},
     {"id":{"name":"obj_mc","path":"objects/obj_mc/obj_mc.yy",},},
+    {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},},
     {"id":{"name":"obj_water_indicator","path":"objects/obj_water_indicator/obj_water_indicator.yy",},},
     {"id":{"name":"obj_water_refill","path":"objects/obj_water_refill/obj_water_refill.yy",},},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
