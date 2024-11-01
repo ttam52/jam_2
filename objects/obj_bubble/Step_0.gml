@@ -5,3 +5,8 @@ if (abs(direction-target_direction) > 10)
 direction = target_direction
 }
 direction += random_range(-1,1)
+
+if (speed > 1)
+{
+	motion_add(direction,-0.15)
+}
