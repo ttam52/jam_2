@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if room == rm_test
+if room == rm_main
 {	
 if x < 100
 {
@@ -14,4 +14,8 @@ else
 {
 	room_goto(rm_altar)
 }
+}
+else
+{
+	room_goto(rm_main)	
 }
