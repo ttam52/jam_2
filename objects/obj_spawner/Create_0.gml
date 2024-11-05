@@ -1,3 +1,5 @@
+if room != rm_main
+{
 for (i = 0; i < global.room_size*2 -1; i++)
 {
 	for (j = 0; j < global.room_size*2 -1; j++)
@@ -6,7 +8,7 @@ for (i = 0; i < global.room_size*2 -1; i++)
 		{
 			if global.room_data[i][j].occupied == 0
 			{
-				instance = instance_create_layer(j*16,i*16,"instances",obj_mini_map_block)
+				instance = instance_create_layer(j*16-(7*16),i*16 -(7*16),"instances",obj_mini_map_block)
 				with(instance)
 				{
 					image_index = 0
@@ -14,7 +16,7 @@ for (i = 0; i < global.room_size*2 -1; i++)
 			}
 			if global.room_data[i][j].active_fire == 1
 			{
-				instance = instance_create_layer(j*16,i*16,"instances",obj_mini_map_block)
+				instance = instance_create_layer(j*16-(7*16),i*16 - (7*16),"instances",obj_mini_map_block)
 				with(instance)
 				{
 					image_index = 2
@@ -22,7 +24,7 @@ for (i = 0; i < global.room_size*2 -1; i++)
 			}
 			if global.room_data[i][j].occupied == 1
 			{
-				instance = instance_create_layer(j*16,i*16,"instances",obj_mini_map_block)
+				instance = instance_create_layer(j*16 -(7*16),i*16 -(7*16),"instances",obj_mini_map_block)
 				with(instance)
 				{
 					image_index = 1
@@ -33,8 +35,25 @@ for (i = 0; i < global.room_size*2 -1; i++)
 	}	
 }
 
-if room != rm_main
+switch global.player_spawn_direction
 {
+	case 1:
+		instance_create_layer(256,32,"Instances",obj_mc)
+	break;
+	case 2:
+		instance_create_layer(256,480,"Instances",obj_mc)
+	break;
+	case 3:
+		instance_create_layer(32,256,"Instances",obj_mc)
+	break;
+	case 4:
+		instance_create_layer(480,256,"Instances",obj_mc)
+	break;
+}
+instance_create_layer(256,256,"instances",obj_water_indicator)
+
+
+
 for (i = 1; i < 5; i++)
 {
 	if string_char_at(global.room_data[global.coordinates.a][global.coordinates.b].doors_connected,i) == "Y"

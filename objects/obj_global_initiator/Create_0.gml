@@ -8,4 +8,5 @@ global.coordinates =
 	a : 0,
 	b : 0
 }
+global.player_spawn_direction = 2
 
