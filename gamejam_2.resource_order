@@ -33,6 +33,7 @@
     {"name":"rm_fire_place","order":5,"path":"rooms/rm_fire_place/rm_fire_place.yy",},
     {"name":"rm_kitchen","order":1,"path":"rooms/rm_kitchen/rm_kitchen.yy",},
     {"name":"spr_bubble","order":1,"path":"sprites/spr_bubble/spr_bubble.yy",},
+    {"name":"spr_cross_room","order":13,"path":"sprites/spr_cross_room/spr_cross_room.yy",},
     {"name":"spr_door","order":10,"path":"sprites/spr_door/spr_door.yy",},
     {"name":"spr_fire_fly","order":7,"path":"sprites/spr_fire_fly/spr_fire_fly.yy",},
     {"name":"spr_fire_projectile","order":8,"path":"sprites/spr_fire_projectile/spr_fire_projectile.yy",},

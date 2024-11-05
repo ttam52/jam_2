@@ -52,6 +52,7 @@
     {"id":{"name":"rm_kitchen","path":"rooms/rm_kitchen/rm_kitchen.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"spr_bubble","path":"sprites/spr_bubble/spr_bubble.yy",},},
+    {"id":{"name":"spr_cross_room","path":"sprites/spr_cross_room/spr_cross_room.yy",},},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},},
     {"id":{"name":"spr_fire_fly","path":"sprites/spr_fire_fly/spr_fire_fly.yy",},},
     {"id":{"name":"spr_fire_projectile","path":"sprites/spr_fire_projectile/spr_fire_projectile.yy",},},
