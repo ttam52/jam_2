@@ -1,8 +1,5 @@
 //update mini map
-
 instance_deactivate_object(obj_mini_map_block)
-show_debug_message("working")
-
 for (i = 0; i < global.room_size*2 -1; i++)
 {
 	for (j = 0; j < global.room_size*2 -1; j++)
@@ -20,7 +17,6 @@ for (i = 0; i < global.room_size*2 -1; i++)
 			
 			if global.room_data[i][j].active_fire_level != 0
 			{	
-				show_debug_message(global.room_data[i][j].active_fire_level)
 				switch (global.room_data[i][j].active_fire_level)
 				{
 						case 1:
