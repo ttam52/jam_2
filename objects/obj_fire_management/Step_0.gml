@@ -3,12 +3,10 @@
 global.fire_spread_ticks ++
 
 
-if global.fire_spread_ticks == 50
+if global.fire_spread_ticks == 10
 {
 	burning_rooms_counter()	
-	show_debug_message("finished burning rooms counter")
 	increase_fire_level()
-	show_debug_message("finished increasing fire level")
 		
 	global.fire_spread_ticks = 0
 	n = 0

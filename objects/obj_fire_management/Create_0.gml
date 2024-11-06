@@ -136,6 +136,7 @@ function increase_fire_level()
 			if check_surrounding_rooms() == false
 			{
 				global.room_data[selected_room_x][selected_room_y].active_fire_level = 1
+				enemy_management()
 				spread_fire()
 			}
 			else
@@ -144,11 +145,13 @@ function increase_fire_level()
 				selected_room_x = burning_rooms_list[random_int].coordinate_x
 				selected_room_y = burning_rooms_list[random_int].coordinate_y
 				increase_fire_level()
+				
 			}
 		}
 		else
 		{
 			global.room_data[selected_room_x][selected_room_y].active_fire_level ++ 
+			enemy_management()
 		}
 		
 	}
@@ -158,37 +161,27 @@ function enemy_management()
 {
 // checks to see how many rooms there are with an active fire level > 1
 // takes the coords of those rooms and populates them with enemies according to the active fire level
-	burning_rooms_counter()
-	for (i = 0; i < n -1; i++)
-	{
-		cr_x = burning_rooms_list[n].coordinate_x
-		cr_y = burning_rooms_list[n].coordinate_y
-		global.room_enemies[cr_x][cr_y].amount += global.room_data[burning_rooms_list[n].coordinate_x][burning_rooms_list[n].coordinate_y].active_fire_level - global.room_enemies[cr_x][cr_y].amount 
-	}
 
-	for (i = 0; i < n -1; i++)
-	{
+global.room_enemies[selected_room_x][selected_room_y].amount ++
+current_enemy = global.room_enemies[selected_room_x][selected_room_y].amount
+
+	
 //creates random enemies in the room, need to fix to only add new random enemies so old ones dont get overwritten.
-		cr_x = burning_rooms_list[n].coordinate_x
-		cr_y = burning_rooms_list[n].coordinate_y
-		for(j = 0; j < global.room_enemies[cr_x][cr_y].amount; j++)
-		{
+
+	switch round(random_range(1,2))
+	{
+		case 1:
+			global.room_enemies[selected_room_x][selected_room_y].type[current_enemy] = obj_fire_fly
+		break
+		case 2:
+			global.room_enemies[selected_room_x][selected_room_y].type[current_enemy] = obj_fire_walker
+		break			
+	}			
+	global.room_enemies[selected_room_x][selected_room_y].x_coordinate[current_enemy] = round(random_range(64,448))
+	global.room_enemies[selected_room_x][selected_room_y].y_coordinate[current_enemy] = round(random_range(64,448))		
 			
-			
-			switch round(random_range(1,2))
-			{
-				case 1:
-					global.room_enemies[cr_x][cr_y].type[j] = obj_fire_fly
-				break
-				case 2:
-					global.room_enemies[cr_x][cr_y].type[j] = obj_fire_walker
-				break			
-			}			
-			global.room_enemies[cr_x][cr_y].x_coordinate[j] = round(random_range(64,448))
-			global.room_enemies[cr_x][cr_y].y_coordinate[j] = round(random_range(64,448))		
-			
-		}
-	}
+		
+	
 
 }
 
