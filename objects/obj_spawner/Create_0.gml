@@ -1,5 +1,6 @@
 if room != rm_main
 {
+
 alarm_set(0,1)
 
 
@@ -46,6 +47,21 @@ for (i = 1; i < 5; i++)
 		}
 	}
 }
+
+
+for (i = 1; i<global.room_enemies[global.coordinates.a][global.coordinates.b].amount+1; i++)
+	{
+	show_debug_message("working")
+	enemy_x = global.room_enemies[global.coordinates.a][global.coordinates.b].x_coordinate[i]
+	enemy_y = global.room_enemies[global.coordinates.a][global.coordinates.b].y_coordinate[i]
+	enemy_type = global.room_enemies[global.coordinates.a][global.coordinates.b].type[i]
+	
+	instance_create_layer(enemy_x,enemy_y,"Instances",enemy_type)
+
+	}
+
+
+
 }
 
 

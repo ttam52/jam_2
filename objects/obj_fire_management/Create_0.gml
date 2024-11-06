@@ -37,6 +37,7 @@ function spread_fire()
 				if global.church_layout[selected_room_x-1][selected_room_y] == 1
 				{
 					global.room_data[selected_room_x-1][selected_room_y].active_fire_level ++
+					enemy_management()
 				}					
 			}
 				
@@ -44,7 +45,8 @@ function spread_fire()
 			{
 				if global.church_layout[selected_room_x+1][selected_room_y] == 1
 				{
-					global.room_data[selected_room_x+1][selected_room_y].active_fire_level ++					
+					global.room_data[selected_room_x+1][selected_room_y].active_fire_level ++	
+					enemy_management()
 				}
 			}
 
@@ -53,6 +55,7 @@ function spread_fire()
 				if global.church_layout[selected_room_x][selected_room_y-1] == 1
 				{
 					global.room_data[selected_room_x][selected_room_y-1].active_fire_level ++
+					enemy_management()
 				}
 			}
 			if(selected_room_y != global.room_size*2 - 2)
@@ -60,6 +63,7 @@ function spread_fire()
 				if global.church_layout[selected_room_x][selected_room_y+1] == 1
 				{
 					global.room_data[selected_room_x][selected_room_y+1].active_fire_level ++
+					enemy_management()
 				}
 			}
 }
@@ -129,14 +133,14 @@ function check_surrounding_rooms()
 
 function increase_fire_level()
 {
+	show_debug_message(global.room_data[selected_room_x][selected_room_y].active_fire_level)
 	if !(global.coordinates.a == selected_room_x && global.coordinates.b == selected_room_y )
 	{
-		if (global.room_data[selected_room_x][selected_room_y].active_fire_level == 3)
+		if (global.room_data[selected_room_x][selected_room_y].active_fire_level > 2)
 		{
 			if check_surrounding_rooms() == false
 			{
 				global.room_data[selected_room_x][selected_room_y].active_fire_level = 1
-				enemy_management()
 				spread_fire()
 			}
 			else
@@ -184,5 +188,9 @@ current_enemy = global.room_enemies[selected_room_x][selected_room_y].amount
 	
 
 }
+
+
+
+
 
 
