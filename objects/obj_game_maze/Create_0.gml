@@ -170,7 +170,15 @@ function initialize_room_data()
 				active_fire_level : 0,
 				doors_connected : "",
 				room_type : "",
-				fountain_room : 0
+				fountain_room : 0,		
+			}
+			global.room_enemies[i][j] =
+			{
+				amount : 0,
+				type : [],
+				x_coordinate : [],
+				y_coordinate : [],
+				
 			}
 			if(global.church_layout[i][j] == 1)
 			{
@@ -289,9 +297,6 @@ for (i = 0; i <4; i++)
 		break;
 	}
 }
-
-
-
 
 
 
