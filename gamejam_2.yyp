@@ -30,13 +30,14 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.0.157",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"gamejam_2",
   "resources":[
     {"id":{"name":"obj_bubble","path":"objects/obj_bubble/obj_bubble.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},
     {"id":{"name":"obj_fire_fly","path":"objects/obj_fire_fly/obj_fire_fly.yy",},},
+    {"id":{"name":"obj_fire_management","path":"objects/obj_fire_management/obj_fire_management.yy",},},
     {"id":{"name":"obj_fire_projectile","path":"objects/obj_fire_projectile/obj_fire_projectile.yy",},},
     {"id":{"name":"obj_fire_walker","path":"objects/obj_fire_walker/obj_fire_walker.yy",},},
     {"id":{"name":"obj_fire","path":"objects/obj_fire/obj_fire.yy",},},

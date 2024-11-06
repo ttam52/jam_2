@@ -167,9 +167,10 @@ function initialize_room_data()
 			global.room_data[i][j] = 
 			{
 				occupied : 0,
-				active_fire : 0,
+				active_fire_level : 0,
 				doors_connected : "",
-				room_type : ""
+				room_type : "",
+				fountain_room : 0
 			}
 			if(global.church_layout[i][j] == 1)
 			{
@@ -259,7 +260,6 @@ initialize_room_data()
 
 
 
-
 for (i = 0; i < global.room_size*2 -1; i++)
 {
 	
@@ -270,13 +270,27 @@ for (i = 0; i < global.room_size*2 -1; i++)
 	show_debug_message(row)
 }
 
+// creates a base level fire in between 1-3 rooms (all fires are on the corners of the map)
+for (i = 0; i <4; i++)
+{
+	switch round(random_range(1,4))
+	{
+		case 1:
+			global.room_data[0][0].active_fire_level = 1
+		break;
+		case 2:
+			global.room_data[6][0].active_fire_level = 1
+		break;
+		case 3:
+			global.room_data[0][6].active_fire_level = 1
+		break;
+		case 4:
+			global.room_data[6][6].active_fire_level = 1
+		break;
+	}
+}
 
-//for (i = 0; i < passes; i++)
-//{
-//	show_debug_message(cell_choice[i])
-//}
-//total = real(string_char_at(test[0][1],1)) + real(string_char_at(test[0][1],2))
-//show_debug_message(total)
+
 
 
 

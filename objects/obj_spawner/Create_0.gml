@@ -1,39 +1,7 @@
 if room != rm_main
 {
-for (i = 0; i < global.room_size*2 -1; i++)
-{
-	for (j = 0; j < global.room_size*2 -1; j++)
-	{
-		if global.church_layout[i][j] == 1
-		{
-			if global.room_data[i][j].occupied == 0
-			{
-				instance = instance_create_layer(j*16-(7*16),i*16 -(7*16),"instances",obj_mini_map_block)
-				with(instance)
-				{
-					image_index = 0
-				}
-			}
-			if global.room_data[i][j].active_fire == 1
-			{
-				instance = instance_create_layer(j*16-(7*16),i*16 - (7*16),"instances",obj_mini_map_block)
-				with(instance)
-				{
-					image_index = 2
-				}
-			}
-			if global.room_data[i][j].occupied == 1
-			{
-				instance = instance_create_layer(j*16 -(7*16),i*16 -(7*16),"instances",obj_mini_map_block)
-				with(instance)
-				{
-					image_index = 1
-				}
-			}
-		}
-		
-	}	
-}
+alarm_set(0,1)
+
 
 switch global.player_spawn_direction
 {
@@ -52,7 +20,10 @@ switch global.player_spawn_direction
 }
 instance_create_layer(256,256,"instances",obj_water_indicator)
 
-
+if global.room_data[global.coordinates.a][global.coordinates.b].fountain_room == 1
+{
+	instance_create_layer(256,256,"Instances",obj_water_refill)
+}
 
 for (i = 1; i < 5; i++)
 {
