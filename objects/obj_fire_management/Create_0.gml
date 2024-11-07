@@ -133,7 +133,6 @@ function check_surrounding_rooms()
 
 function increase_fire_level()
 {
-	show_debug_message(global.room_data[selected_room_x][selected_room_y].active_fire_level)
 	if !(global.coordinates.a == selected_room_x && global.coordinates.b == selected_room_y )
 	{
 		if (global.room_data[selected_room_x][selected_room_y].active_fire_level > 2)
