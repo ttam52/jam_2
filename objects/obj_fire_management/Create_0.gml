@@ -37,7 +37,7 @@ function spread_fire()
 				if global.church_layout[selected_room_x-1][selected_room_y] == 1
 				{
 					global.room_data[selected_room_x-1][selected_room_y].active_fire_level ++
-					enemy_management()
+					enemy_management(selected_room_x-1,selected_room_y)
 				}					
 			}
 				
@@ -46,7 +46,7 @@ function spread_fire()
 				if global.church_layout[selected_room_x+1][selected_room_y] == 1
 				{
 					global.room_data[selected_room_x+1][selected_room_y].active_fire_level ++	
-					enemy_management()
+					enemy_management(selected_room_x+1,selected_room_y)
 				}
 			}
 
@@ -55,7 +55,7 @@ function spread_fire()
 				if global.church_layout[selected_room_x][selected_room_y-1] == 1
 				{
 					global.room_data[selected_room_x][selected_room_y-1].active_fire_level ++
-					enemy_management()
+					enemy_management(selected_room_x,selected_room_y-1)
 				}
 			}
 			if(selected_room_y != global.room_size*2 - 2)
@@ -63,7 +63,7 @@ function spread_fire()
 				if global.church_layout[selected_room_x][selected_room_y+1] == 1
 				{
 					global.room_data[selected_room_x][selected_room_y+1].active_fire_level ++
-					enemy_management()
+					enemy_management(selected_room_x,selected_room_y+1)
 				}
 			}
 }
@@ -154,19 +154,19 @@ function increase_fire_level()
 		else
 		{
 			global.room_data[selected_room_x][selected_room_y].active_fire_level ++ 
-			enemy_management()
+			enemy_management(selected_room_x,selected_room_y)
 		}
 		
 	}
 }
 
-function enemy_management()
+function enemy_management(room_x,room_y)
 {
 // checks to see how many rooms there are with an active fire level > 1
 // takes the coords of those rooms and populates them with enemies according to the active fire level
 
-global.room_enemies[selected_room_x][selected_room_y].amount ++
-current_enemy = global.room_enemies[selected_room_x][selected_room_y].amount
+global.room_enemies[room_x][room_y].amount ++
+current_enemy = global.room_enemies[room_x][room_y].amount
 
 	
 //creates random enemies in the room, need to fix to only add new random enemies so old ones dont get overwritten.
@@ -174,14 +174,14 @@ current_enemy = global.room_enemies[selected_room_x][selected_room_y].amount
 	switch round(random_range(1,2))
 	{
 		case 1:
-			global.room_enemies[selected_room_x][selected_room_y].type[current_enemy] = obj_fire_fly
+			global.room_enemies[room_x][room_y].type[current_enemy] = obj_fire_fly
 		break
 		case 2:
-			global.room_enemies[selected_room_x][selected_room_y].type[current_enemy] = obj_fire_walker
+			global.room_enemies[room_x][room_y].type[current_enemy] = obj_fire_walker
 		break			
 	}			
-	global.room_enemies[selected_room_x][selected_room_y].x_coordinate[current_enemy] = round(random_range(64,448))
-	global.room_enemies[selected_room_x][selected_room_y].y_coordinate[current_enemy] = round(random_range(64,448))		
+	global.room_enemies[room_x][room_y].x_coordinate[current_enemy] = round(random_range(64,448))
+	global.room_enemies[room_x][room_y].y_coordinate[current_enemy] = round(random_range(64,448))		
 			
 		
 	
