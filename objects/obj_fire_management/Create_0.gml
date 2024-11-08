@@ -6,9 +6,8 @@ selected_room_x = 0
 selected_room_y = 0
 
 //checks to see how many rooms contain fire
-
-
 n = 0
+
 function burning_rooms_counter()
 {
 	for(i = 0; i < global.room_size*2-1; i++)

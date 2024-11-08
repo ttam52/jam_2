@@ -174,10 +174,13 @@ function initialize_room_data()
 			}
 			global.room_enemies[i][j] =
 			{
+				position_in_list : 0,
 				amount : 0,
 				type : [],
 				x_coordinate : [],
 				y_coordinate : [],
+				
+				
 				
 			}
 			if(global.church_layout[i][j] == 1)
