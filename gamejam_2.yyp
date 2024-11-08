@@ -48,9 +48,7 @@
     {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},},
     {"id":{"name":"obj_water_indicator","path":"objects/obj_water_indicator/obj_water_indicator.yy",},},
     {"id":{"name":"obj_water_refill","path":"objects/obj_water_refill/obj_water_refill.yy",},},
-    {"id":{"name":"rm_altar","path":"rooms/rm_altar/rm_altar.yy",},},
-    {"id":{"name":"rm_fire_place","path":"rooms/rm_fire_place/rm_fire_place.yy",},},
-    {"id":{"name":"rm_kitchen","path":"rooms/rm_kitchen/rm_kitchen.yy",},},
+    {"id":{"name":"rm_church_maze","path":"rooms/rm_church_maze/rm_church_maze.yy",},},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
     {"id":{"name":"spr_bubble","path":"sprites/spr_bubble/spr_bubble.yy",},},
     {"id":{"name":"spr_cross_room","path":"sprites/spr_cross_room/spr_cross_room.yy",},},
@@ -71,9 +69,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
-    {"roomId":{"name":"rm_kitchen","path":"rooms/rm_kitchen/rm_kitchen.yy",},},
-    {"roomId":{"name":"rm_altar","path":"rooms/rm_altar/rm_altar.yy",},},
-    {"roomId":{"name":"rm_fire_place","path":"rooms/rm_fire_place/rm_fire_place.yy",},},
+    {"roomId":{"name":"rm_church_maze","path":"rooms/rm_church_maze/rm_church_maze.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

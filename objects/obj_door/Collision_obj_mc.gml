@@ -48,17 +48,7 @@ else
 		global.room_data[global.coordinates.a][global.coordinates.b].occupied = 1
 		}
 		
-		switch (global.room_data[global.coordinates.a][global.coordinates.b].room_type)
-		{
-			case 1:
-				room_goto(rm_altar)
-			break;
-			case 2:
-				room_goto(rm_fire_place)
-			break;
-			case 3:
-				room_goto(rm_kitchen)
-			break;
-		}
+		room_goto(rm_church_maze)
+
 	
 }

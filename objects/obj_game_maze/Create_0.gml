@@ -250,7 +250,7 @@ function initialize_room_data()
 			{
 				global.room_data[i][j].doors_connected += "NNNN"
 			}
-			global.room_data[i][j].room_type = round(random_range(1,3))
+			global.room_data[i][j].room_type = rm_church_maze
 		}
 	}
 

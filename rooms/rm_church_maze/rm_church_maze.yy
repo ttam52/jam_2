@@ -1,13 +1,13 @@
 {
   "$GMRoom":"v1",
-  "%Name":"rm_kitchen",
-  "creationCodeFile":"",
+  "%Name":"rm_church_maze",
+  "creationCodeFile":"rooms/rm_church_maze/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_5CF972E4","path":"rooms/rm_kitchen/rm_kitchen.yy",},
-    {"name":"inst_3AD8FA1A","path":"rooms/rm_kitchen/rm_kitchen.yy",},
+    {"name":"inst_5CF972E4","path":"rooms/rm_church_maze/rm_church_maze.yy",},
+    {"name":"inst_3AD8FA1A","path":"rooms/rm_church_maze/rm_church_maze.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -17,7 +17,7 @@
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_small_room","path":"sprites/spr_small_room/spr_small_room.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"rm_kitchen",
+  "name":"rm_church_maze",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",

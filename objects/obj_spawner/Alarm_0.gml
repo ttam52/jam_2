@@ -71,3 +71,9 @@ for (i = 0; i < global.room_size*2 -1; i++)
 		}
 	}	
 }
+
+
+
+
+
+
