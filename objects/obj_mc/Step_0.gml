@@ -14,7 +14,6 @@ else
 
 
 
-
 if (keyboard_check_direct(ord("W")))
 {
 	if y > lower_bound
@@ -24,7 +23,7 @@ if (keyboard_check_direct(ord("W")))
 	char_direction = 2
 	moving = true
 }
-else if (keyboard_check_direct(ord("A")))
+if (keyboard_check_direct(ord("A")))
 {
 	if x > lower_bound - 16
 	{
@@ -34,7 +33,7 @@ else if (keyboard_check_direct(ord("A")))
 	moving = true
 	
 }
-else if (keyboard_check_direct(ord("S")))
+if (keyboard_check_direct(ord("S")))
 {
 	if y < upper_bound
 	{
@@ -45,7 +44,7 @@ else if (keyboard_check_direct(ord("S")))
 
 	
 }
-else if (keyboard_check_direct(ord("D")))
+if (keyboard_check_direct(ord("D")))
 {
 	if x < upper_bound + 16
 	{
@@ -54,9 +53,10 @@ else if (keyboard_check_direct(ord("D")))
 	char_direction = 4
 	moving = true
 }
-else
+
+if keyboard_check_released(vk_anykey)
 {
-	moving = false
+moving = false
 }
 
 
