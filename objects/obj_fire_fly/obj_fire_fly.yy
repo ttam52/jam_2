@@ -15,8 +15,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_fire",
-    "path":"objects/obj_fire/obj_fire.yy",
+    "name":"obj_enemy_parent",
+    "path":"objects/obj_enemy_parent/obj_enemy_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

@@ -53,7 +53,6 @@ if (keyboard_check_direct(ord("D")))
 	}
 	char_direction = 4
 	moving = true
-	spr_small_room.image_index ++
 }
 
 if keyboard_check_released(vk_anykey)

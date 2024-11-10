@@ -4,5 +4,5 @@ x = obj_mc.x
 y = obj_mc.y - 30
 
 
-image_index = 10 - (global.total_water/10)
+image_index = 10 - (global.total_water/50)
 

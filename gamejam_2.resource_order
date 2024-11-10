@@ -19,11 +19,11 @@
   "ResourceOrderSettings":[
     {"name":"obj_bubble","order":1,"path":"objects/obj_bubble/obj_bubble.yy",},
     {"name":"obj_door","order":10,"path":"objects/obj_door/obj_door.yy",},
+    {"name":"obj_enemy_parent","order":5,"path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},
     {"name":"obj_fire_fly","order":8,"path":"objects/obj_fire_fly/obj_fire_fly.yy",},
     {"name":"obj_fire_management","order":13,"path":"objects/obj_fire_management/obj_fire_management.yy",},
     {"name":"obj_fire_projectile","order":9,"path":"objects/obj_fire_projectile/obj_fire_projectile.yy",},
     {"name":"obj_fire_walker","order":7,"path":"objects/obj_fire_walker/obj_fire_walker.yy",},
-    {"name":"obj_fire","order":5,"path":"objects/obj_fire/obj_fire.yy",},
     {"name":"obj_game_maze","order":11,"path":"objects/obj_game_maze/obj_game_maze.yy",},
     {"name":"obj_global_initiator","order":3,"path":"objects/obj_global_initiator/obj_global_initiator.yy",},
     {"name":"obj_mini_map_block","order":12,"path":"objects/obj_mini_map_block/obj_mini_map_block.yy",},
