@@ -1,23 +1,3 @@
-doors = ""
-
-//room floor generation
-//doors = global.room_data[global.coordinates.a][global.coordinates.b].doors_connected
-//show_debug_message(doors)
-//var layer_id = layer_get_id("Background")
-//if doors == "YNNN" || doors == "YYNN" || doors == "NYNN"
-//{
-//	layer_background_index(layer_id,1)
-//}
-//else if doors == "NNYY" || doors == "NNYN" || doors == "NNNY"
-//{
-	
-//	layer_background_index(layer_id,2)
-//}
-
-
-
-
-
 // everything else
 
 if room != rm_main

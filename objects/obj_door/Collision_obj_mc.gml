@@ -48,7 +48,19 @@ else
 		global.room_data[global.coordinates.a][global.coordinates.b].occupied = 1
 		}
 		
-		room_goto(rm_church_maze)
+		
+		doors = global.room_data[global.coordinates.a][global.coordinates.b].doors_connected
+		show_debug_message(doors)
+		if doors == "YNNN" || doors == "NYNN"
+		{
+			doors = "YYNN"
+		}
+		else if doors == "NNYN" || doors == "NNNY"
+		{
+			doors = "NNYY"
+		}
+		var next_room = asset_get_index("_" + doors)
+		room_goto(next_room)
 
 	
 }
