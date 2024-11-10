@@ -25,7 +25,7 @@ instance_create_layer(256,256,"instances",obj_water_indicator)
 
 if global.room_data[global.coordinates.a][global.coordinates.b].fountain_room == 1
 {
-	instance_create_layer(256,256,"Instances",obj_water_refill)
+	instance_create_layer(208,192,"Instances",obj_water_refill)
 }
 
 for (i = 1; i < 5; i++)
@@ -53,7 +53,6 @@ for (i = 1; i < 5; i++)
 
 for (i = 1; i<global.room_enemies[global.coordinates.a][global.coordinates.b].amount+1; i++)
 	{
-	show_debug_message("working")
 	enemy_x = global.room_enemies[global.coordinates.a][global.coordinates.b].x_coordinate[i]
 	enemy_y = global.room_enemies[global.coordinates.a][global.coordinates.b].y_coordinate[i]
 	enemy_type = global.room_enemies[global.coordinates.a][global.coordinates.b].type[i]
@@ -66,6 +65,8 @@ for (i = 1; i<global.room_enemies[global.coordinates.a][global.coordinates.b].am
 
 }
 
+
+show_debug_message(global.room_data[global.coordinates.a][global.coordinates.b].active_fire_level)
 
 
 

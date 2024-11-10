@@ -281,25 +281,11 @@ for (i = 0; i < global.room_size*2 -1; i++)
 	show_debug_message(row)
 }
 
-// creates a base level fire in between 1-3 rooms (all fires are on the corners of the map)
-for (i = 0; i <4; i++)
-{
-	switch round(random_range(1,4))
-	{
-		case 1:
-			global.room_data[0][0].active_fire_level = 1
-		break;
-		case 2:
-			global.room_data[6][0].active_fire_level = 1
-		break;
-		case 3:
-			global.room_data[0][6].active_fire_level = 1
-		break;
-		case 4:
-			global.room_data[6][6].active_fire_level = 1
-		break;
-	}
-}
+
+global.room_data[0][0].active_fire_level = 1
+global.room_data[0][6].active_fire_level = 1
+global.room_data[6][6].active_fire_level = 1
+
 
 
 

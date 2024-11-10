@@ -26,8 +26,16 @@ function burning_rooms_counter()
 		}
 	}
 	random_int = round(random_range(0,n-1))
+	
 	selected_room_x = burning_rooms_list[random_int].coordinate_x
 	selected_room_y = burning_rooms_list[random_int].coordinate_y
+	
+	if selected_room_x == global.coordinates.a && selected_room_y == global.coordinates.b
+	{
+		burning_rooms_counter()
+	}
+	
+	
 }
 function spread_fire()
 {
@@ -138,7 +146,6 @@ function increase_fire_level()
 		{
 			if check_surrounding_rooms() == false
 			{
-				global.room_data[selected_room_x][selected_room_y].active_fire_level = 1
 				spread_fire()
 			}
 			else

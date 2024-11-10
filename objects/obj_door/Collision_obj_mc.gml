@@ -9,10 +9,10 @@ else
 {
 if room == rm_main
 {
-	global.room_data[6][2].occupied = 1
-	global.room_data[6][2].fountain_room = 1
+	global.room_data[6][0].occupied = 1
+	global.room_data[6][0].fountain_room = 1
 	global.coordinates.a = 6
-	global.coordinates.b = 2
+	global.coordinates.b = 0
 	
 }
 else
