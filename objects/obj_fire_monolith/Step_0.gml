@@ -6,6 +6,7 @@ if fire_health < 1
 	global.room_data[global.coordinates.a][global.coordinates.b].active_fire_level --
 	global.room_enemies[global.coordinates.a][global.coordinates.b].amount --
 	global.room_data[global.coordinates.a][global.coordinates.b].burning_room = 0
+	global.room_data[global.coordinates.a][global.coordinates.b].fountain_room = 1
 }
 
 

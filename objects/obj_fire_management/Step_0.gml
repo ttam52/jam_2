@@ -3,7 +3,7 @@
 global.fire_spread_ticks ++
 
 
-if global.fire_spread_ticks == 100
+if global.fire_spread_ticks == 125
 {
 	burning_rooms_counter()	
 	if n == 0
