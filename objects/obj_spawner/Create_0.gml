@@ -4,7 +4,10 @@ if room != rm_main
 {
 
 alarm_set(0,1)
-
+if global.room_data[global.coordinates.a][global.coordinates.b].active_fire_level != 0
+{
+	instance_create_layer(256,256,"Instances",obj_burning)
+}
 
 switch global.player_spawn_direction
 {
@@ -60,13 +63,21 @@ for (i = 1; i<global.room_enemies[global.coordinates.a][global.coordinates.b].am
 	instance_create_layer(enemy_x,enemy_y,"Instances",enemy_type)
 
 	}
+	
+if global.room_data[global.coordinates.a][global.coordinates.b].burning_room == 1
+{
+	instance_create_layer(256,256,"Instances",obj_fire_monolith)
+}
 
-
-
+	
 }
 
 
-show_debug_message(global.room_data[global.coordinates.a][global.coordinates.b].active_fire_level)
+
+
+
+
+
 
 
 

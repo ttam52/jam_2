@@ -10,6 +10,7 @@ n = 0
 
 function burning_rooms_counter()
 {
+	n = 0
 	for(i = 0; i < global.room_size*2-1; i++)
 	{
 		for(j = 0; j < global.room_size*2-1; j++)

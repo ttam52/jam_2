@@ -6,6 +6,10 @@ global.fire_spread_ticks ++
 if global.fire_spread_ticks == 100
 {
 	burning_rooms_counter()	
+	if n == 0
+	{
+		room_goto(rm_win)
+	}
 	increase_fire_level()
 		
 	global.fire_spread_ticks = 0

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if fire_health == 0
+if fire_health < 1
 {
 	instance_destroy()
 	global.room_data[global.coordinates.a][global.coordinates.b].active_fire_level --

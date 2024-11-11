@@ -3,6 +3,7 @@
 randomise() 
 global.total_water = 500
 global.room_size = 4
+global.game_stage = 1
 global.coordinates =
 {
 	a : 0,

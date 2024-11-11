@@ -171,6 +171,7 @@ function initialize_room_data()
 				doors_connected : "",
 				room_type : "",
 				fountain_room : 0,		
+				burning_room : 0,
 			}
 			global.room_enemies[i][j] =
 			{
@@ -285,6 +286,9 @@ for (i = 0; i < global.room_size*2 -1; i++)
 global.room_data[0][0].active_fire_level = 1
 global.room_data[0][6].active_fire_level = 1
 global.room_data[6][6].active_fire_level = 1
+global.room_data[0][0].burning_room = 1
+global.room_data[0][6].burning_room = 1
+global.room_data[6][6].burning_room = 1
 
 
 

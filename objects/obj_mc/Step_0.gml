@@ -78,4 +78,8 @@ if frames == 10
 	
 
 }
+if global.total_water < 100
+{
+	room_goto(rm_win_not)
+}
 

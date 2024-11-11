@@ -16,7 +16,9 @@ for (i = 0; i < global.room_size*2 -1; i++)
 			}			
 			
 			if global.room_data[i][j].active_fire_level != 0
-			{	
+			{				
+				
+				
 				switch (global.room_data[i][j].active_fire_level)
 				{
 						case 1:
