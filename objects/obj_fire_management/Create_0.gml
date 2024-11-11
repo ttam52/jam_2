@@ -31,7 +31,7 @@ function burning_rooms_counter()
 	selected_room_x = burning_rooms_list[random_int].coordinate_x
 	selected_room_y = burning_rooms_list[random_int].coordinate_y
 	
-	if selected_room_x == global.coordinates.a && selected_room_y == global.coordinates.b
+	if selected_room_x == global.coordinates.a && selected_room_y == global.coordinates.b && n > 1
 	{
 		burning_rooms_counter()
 	}
